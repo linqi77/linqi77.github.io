@@ -5,7 +5,7 @@ let questionText = document.getElementById('question');
 let mainImage = document.getElementById('mainImage');
 
 // 确认名字按钮点击事件
-    const params = new URLSearchParms(window.location.search); 
+    const params = URLSearchParms(window.location.search); 
     let username = params.ger("name");
 // 限制用户名长度，避免页面样式崩坏
     const maxLength = 20;
