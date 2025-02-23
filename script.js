@@ -4,9 +4,8 @@ let noButton = document.getElementById('no');
 let questionText = document.getElementById('question');
 let mainImage = document.getElementById('mainImage');
 
-// 确认名字按钮点击事件
-    const params = URLSearchParms(window.location.search); 
-    let username = params.ger("name");
+const params = new URLSearchParms(window.location.search); 
+let username = params.get("name");
 // 限制用户名长度，避免页面样式崩坏
     const maxLength = 20;
     const safeUsername = username? username.substring(0, maxLength) : "???";
