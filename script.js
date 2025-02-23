@@ -48,7 +48,7 @@ noButton.addEventListener('click', function () {
 const loveTest = `！好呀好呀，我也一直喜欢小蛋( >᎑<)♡︎ᐝ  ${
     username ? `${safeusername}  ♡︎ᐝ(>᎑< )` : ""}`;
 
-yesButton.addEventListener('click', function () {
+yesButton.addEventListener("click", function () {
     // 先创建基础 HTML 结构
     document.body.innerHTML = `
         <div class="yes-screen">
