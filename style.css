@@ -41,20 +41,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* 新增链接样式 */
-#nameInputContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#sidehead-wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 /* 标题样式 */
 h1 {
     font-size: 3.5vw;
@@ -114,19 +100,6 @@ button {
 .yes-image {
     width: 50%;
     max-width: 300px;
-}
-
-/* 输入框样式 */
-input[type="text"] {
-    font-family: 'Lolita', Arial, sans-serif;
-    font-size: 3.5vw;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    width: 90%;
-    box-sizing: border-box;
-    word-wrap: break-word;
 }
 
 /* 按钮激活（点击）样式，优化点击反馈 */
