@@ -4,7 +4,6 @@ let noButton = document.getElementById('no');
 let questionText = document.getElementById('question');
 let mainImage = document.getElementById('mainImage');
 
-const params = new URLSearchParms(window.location.search); 
 let username = params.get("name");
 
 //防止'null'变成'null'
