@@ -4,12 +4,6 @@ let noButton = document.getElementById('no');
 let questionText = document.getElementById('question');
 let mainImage = document.getElementById('mainImage');
 
-let username = params.get("name");
-
-//防止'null'变成'null'
-if(username)
-{questionText.innerText = questionText.innerText + safeUsername;}
-
 let clickCount = 0; // 记录点击 No 的次数
 // No 按钮的文字变化
 const noTexts = [
