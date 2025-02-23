@@ -45,9 +45,10 @@ noButton.addEventListener('click', function () {
 });
 
 // Yes 按钮点击后，进入表白成功页面
-const loveTest = (username) = `！好呀好呀，我也一直喜欢小蛋( >᎑<)♡︎ᐝ  ${username? `${safeusername}  ♡︎ᐝ(>᎑< )` : ""}`;
+const loveTest = `！好呀好呀，我也一直喜欢小蛋( >᎑<)♡︎ᐝ  ${
+    username ? `${safeusername}  ♡︎ᐝ(>᎑< )` : ""}`;
+
 yesButton.addEventListener('click', function () {
-    let username = questionText.innerText.split('吗？')[1].trim();
     // 先创建基础 HTML 结构
     document.body.innerHTML = `
         <div class="yes-screen">
@@ -56,7 +57,7 @@ yesButton.addEventListener('click', function () {
         </div>
     `;
     // 确保用户名安全地插入
-    document.querySelector(".yes-text").innerText = loveTest(username);
+    document.querySelector(".yes-text").innerText = loveTest;
     // 禁止滚动，保持页面美观
     document.body.style.overflow = "hidden";
     // 给表白成功页面添加慢慢浮现动画类名
